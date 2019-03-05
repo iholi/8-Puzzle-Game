@@ -1,0 +1,53 @@
+.square
+{
+    background: #2840ff;
+    color: #000000;
+    font-weight: bold;
+    flex: auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border: 6px solid white;
+    text-align: center;
+}
+
+.square:after
+{
+    float:left;
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.section
+{
+    width: 100%;
+}
+
+.title
+{
+    font-family: 'Squada One', cursive;
+    font-size: 5em;
+}
+
+p
+{
+    font-family: 'Slabo 27px', serif;
+    font-size: 1.1em;
+}
+
+.center
+{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.imagesize
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 17%;
+    max-width: 17%;
+}

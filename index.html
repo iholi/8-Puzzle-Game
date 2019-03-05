@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Isabel Ho Li">
+    <meta name="description" content="8 Puzzle">
+    <title>8 Puzzle</title>
+    <link rel="icon" href="images/eight.jpg" type="image/jpg">
+    <link href="https://fonts.googleapis.com/css?family=Squada+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+</head>
+<body>
+<main>
+
+    <div class='section title center'> 8 Puzzle</div>
+    <img class="imagesize" id="gif">
+
+    <div>
+        <p class="center">To move: If there is an empty adjacent square next to a tile, a tile may be slid into the empty location. </p>
+        <p class="center">To win: The tiles must be moved back into their original positions, numbered 1 through 8.</p>
+    </div>
+
+    <table id="tableID" class="container table" style="cursor: grab; width: 30%">
+        <tbody>
+        <tr>
+            <td onclick="myFunction(this)" id="1c" class="square ">1</td>
+            <td onclick="myFunction(this)" id="2c" class="square ">2</td>
+            <td onclick="myFunction(this)" id="3c" class="square ">3</td>
+        </tr>
+        <tr>
+            <td onclick="myFunction(this)" id="8c" class="square ">8</td>
+            <td onclick="myFunction(this)" id="0c" class="square "> </td>
+            <td onclick="myFunction(this)" id="4c" class="square ">4</td>
+        </tr>
+        <tr>
+            <td onclick="myFunction(this)" id="7c" class="square ">7</td>
+            <td onclick="myFunction(this)" id="6c" class="square ">6</td>
+            <td onclick="myFunction(this)" id="5c" class="square ">5</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <div class="center">
+        <button onclick="randomize()" type="button" class="btn btn-outline-primary btn-lg">Randomize</button>
+    </div>
+
+    <script src="scripts/script_index.js"></script>
+</main>
+</body>
+</html>
